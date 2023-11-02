@@ -1,0 +1,57 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Plus+Jakarta+Sans&family=Roboto&display=swap');
+
+/* Variables */
+:root {
+    /* Colors */
+    --main-black: #14110F;
+    --secondary-purple: #8D6A9F;
+    --accent-pumpkin: #FE7F2D;
+    --font-white: #FCFAF9;
+
+    /* Font */
+    --lato: Lato, sans-serif;
+}
+
+/* Reset default browser settings */
+
+* {
+    font-family: var(--lato);
+    color: var(--font-white);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Specific styles */
+
+.header, .first-section {
+    background-color: var(--main-black);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+
+/* .first-section {
+    background-image: url(https://source.unsplash.com/FIrHUn3GI4A/1920x1080);
+    background-size: cover;
+} */
+
+/* .first-image {
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+} */
