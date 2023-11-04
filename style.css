@@ -5,7 +5,7 @@
 :root {
   /* Colors */
   --main-black: #070b0d;
-  --main-gray: #ffd6da;
+  --main-light: #ffd6da;
   --secondary-orange: #11bad8;
   --accent-sky: #5cc8ff;
   --font-white: #fcf9f8;
@@ -26,11 +26,13 @@
 
 a {
   text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+  transition: all 0.3s ease-in-out;
 }
 
 a:hover {
-  border-bottom: 1px solid var(--accent-sky);
-  padding-bottom: 2px;
+  border-bottom: 2px solid var(--accent-sky);
 }
 
 ul {
@@ -67,6 +69,8 @@ ul {
   display: flex;
   gap: 32px;
   font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* First section */
@@ -94,8 +98,21 @@ h1 {
   font-weight: bolder;
 }
 
+.fa-heart {
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-heart:hover {
+  color: var(--main-light);
+  transform: scale(1.3);
+}
+
 h2 {
   font-size: 28px;
+}
+
+h2:hover {
+  color: var(--main-light);
 }
 
 #first-paragraph {
@@ -108,12 +125,22 @@ small {
   font-weight: 100;
 }
 
-button {
+#sign-up-button {
   font-size: 18px;
   border: 0;
   border-radius: 8px;
   padding: 10px 24px;
   background-color: var(--secondary-orange);
+  transition: all 0.1s ease-in-out;
+}
+
+#sign-up-button:hover {
+  background-color: #00aaff;
+}
+
+#sign-up-button:active {
+  background-color: #003139;
+  transform: scale(0.9);
 }
 
 .first-image {
@@ -142,7 +169,8 @@ button {
   flex-direction: column;
   gap: 12px;
   align-items: center;
-  background-color: var(--main-gray);
+  background-color: var(--main-light);
+  margin-bottom: 90px;
 }
 
 .information-container > * {
@@ -203,3 +231,5 @@ button {
   color: var(--font-dark);
   opacity: 0.6;
 }
+
+/* Testimonial section */
