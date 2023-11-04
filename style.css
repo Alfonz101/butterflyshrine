@@ -1,12 +1,12 @@
 /* Imports */
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Plus+Jakarta+Sans&family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,100;1,300&display=swap");
+
 /* Variables */
 :root {
   /* Colors */
   --main-black: #070b0d;
   --main-light: #ffd6da;
-  --secondary-orange: #11bad8;
+  --secondary-blue: #11bad8;
   --accent-sky: #5cc8ff;
   --font-white: #fcf9f8;
   --font-dark: #25173a;
@@ -130,7 +130,7 @@ small {
   border: 0;
   border-radius: 8px;
   padding: 10px 24px;
-  background-color: var(--secondary-orange);
+  background-color: var(--secondary-blue);
   transition: all 0.1s ease-in-out;
 }
 
@@ -233,3 +233,32 @@ small {
 }
 
 /* Testimonial section */
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  background-color: #ffd2d7;
+  margin-bottom: 90px;
+}
+
+.testimonial-content > * {
+  color: var(--font-dark);
+}
+
+.testimonial-content {
+  padding: 90px 400px;
+}
+
+#quote {
+  font-size: 36px;
+  font-style: italic;
+}
+
+#author {
+  text-align: right;
+  font-size: 24px;
+  padding-right: 24px;
+}
+
+/* Action section */
