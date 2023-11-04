@@ -247,7 +247,7 @@ small {
 }
 
 .testimonial-content {
-  padding: 90px 400px;
+  padding: 100px 400px;
 }
 
 #quote {
@@ -267,6 +267,7 @@ small {
   justify-content: center;
   padding: 70px;
   background-color: var(--main-light);
+  margin-bottom: 50px;
 }
 
 .action-content {
@@ -279,11 +280,11 @@ small {
 }
 
 .action-text h3 {
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .action-text p {
-  font-size: 12px;
+  font-size: 13px;
   opacity: 0.7;
 }
 
@@ -311,4 +312,15 @@ small {
 .action-button button:active {
   background-color: #003139;
   transform: scale(0.9);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--main-black);
+  text-align: center;
+  padding: 40px;
+}
+
+#developer {
+  color: #ff7272;
 }
